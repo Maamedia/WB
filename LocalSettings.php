@@ -189,11 +189,11 @@ $wgWBRepoSettings['entityNamespaces']['property'] = WB_NS_PROPERTY;
 # Add more configuration options below.
 $wgEnableWikibaseRepo = true;
 $wgEnableWikibaseClient = false;
-// wfLoadExtension( 'WikibaseClient', "$IP/extensions/Wikibase/extension-client.json" );
+wfLoadExtension( 'WikibaseClient', "$IP/extensions/Wikibase/extension-client.json" );
 require_once "$IP/extensions/Wikibase/client/ExampleSettings.php";
 require_once "$IP/extensions/Wikibase/client/WikibaseClient.php";
-// wfLoadExtension( 'WikibaseRepository', "$IP/extensions/Wikibase/extension-repo.json" );
-// require_once "$IP/extensions/Wikibase/repo/Wikibase.php";
+wfLoadExtension( 'WikibaseRepository', "$IP/extensions/Wikibase/extension-repo.json" );
+require_once "$IP/extensions/Wikibase/repo/Wikibase.php";
 require_once "$IP/extensions/Wikibase/repo/ExampleSettings.php";
 $wgWBClientSettings['repoUrl'] = 'https://wikidata.org';
 $wgWBClientSettings['repoScriptPath'] = '';
